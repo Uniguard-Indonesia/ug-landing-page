@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>UNIGUARD Indonesia</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="public/front/img/favicon-32x32.png" rel="icon">
+    <link href="public/front/img/favicon-32x32.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="public/front/vendor/aos/aos.css" rel="stylesheet">
+    <link href="public/front/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="public/front/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="public/front/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="public/front/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="public/front/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Template Main CSS File -->
+    <link href="public/front/css/style.css" rel="stylesheet">
+        <script>
+    const pageData = {
+        home: {
+            title: "UNIGUARD Indonesia",
+            sub_title: "UNIGUARD menawarkan berbagai solusi kepada bisnis untuk meningkatkan keselamatan, efisiensi tenaga kerja, kontrak Kepatuhan dan efektivitas biaya secara keseluruhan",
+            image: "https://uniguard.co.id/storage/front/img/hero.png"
+        },
+        about: {
+            title: "Tentang Kami",
+            sub_title: "Misi Uniguard",
+            content: "Misi kami adalah merintis inovasi, mempertahankan kepeloporan di bidang kami. Kami memberi nilai tambah pada bisnis pelanggan kami dengan memberikan solusi, pencapaian baru dalam lingkungan tim yang beretika tinggi, berintegritas, dan layanan pelanggan terbaik.",
+            image: "https://uniguard.co.id/storage/front/img/about.png"
+        },
+        counts: [
+            // { total: 100, title: "Clients" },
+            // { total: 200, title: "Projects" },
+            // { total: 50, title: "Awards" },
+            // { total: 10, title: "Offices" }
+        ],
+        services: [
+            // Example static data, replace with dynamic data as needed
+            // { title: "Service 1", description: "Description 1", icon: "<i class='bi bi-check'></i>" },
+            // { title: "Service 2", description: "Description 2", icon: "<i class='bi bi-check'></i>" },
+            // { title: "Service 3", description: "Description 3", icon: "<i class='bi bi-check'></i>" }
+        ],
+        sections: [
+            { key: "Client", title: "Our Clients", description: "This is our clients" },
+            { key: "Testimonial", title: "Partnership", description: "This is our support Partnership" },
+            { key: "Product", title: "Our Product", description: "This is our product" },
+            { key: "Project", title: "Our Project", description: "This is our project" },
+            { key: "Service", title: "Our service", description: "This is our services" },
+            { key: "Team", title: "Team", description: "This is our team" },
+            { key: "Contact", title: "Contact", description: "This is our contact" },
+            { key: "Newsletter", title: "Newsletter", description: "This is our Newsletter" },
+        ],
+       clients: [
+  { name: "Lollipop Playland", logo: "https://uniguard.co.id/storage/images/logo/202408011903.png" },
+  { name: "KAI", logo: "https://uniguard.co.id/storage/images/logo/202408013599.png" },
+  { name: "Nicole's River Park", logo: "https://uniguard.co.id/storage/images/logo/202408011048.png" },
+  { name: "GBK - Gelora Bung Karno", logo: "https://uniguard.co.id/storage/images/logo/202411209331.png" },
+  { name: "HeHa Sky View", logo: "https://uniguard.co.id/storage/images/logo/202503247383.png" },
+  { name: "Batik Fractal Indonesia", logo: "https://uniguard.co.id/storage/images/logo/202503242601.png" },
+  { name: "PT Communications Solution Indonesia (CommSol)", logo: "https://uniguard.co.id/storage/images/logo/202503248780.png" },
+  { name: "PT. Matallo Telesys", logo: "https://uniguard.co.id/storage/images/logo/202503248962.png" },
+  { name: "PT. Sanghiang Perkasa", logo: "https://uniguard.co.id/storage/images/logo/202503247572.png" },
+  { name: "PT. Tah Sung Hung (TSH)", logo: "https://uniguard.co.id/storage/images/logo/202503246826.png" },
+  { name: "PT. Thinkspedia Digital Solusindo", logo: "https://uniguard.co.id/storage/images/logo/202503242715.png" },
+  { name: "PT. Tripsky Teknologi Surabaya", logo: "https://uniguard.co.id/storage/images/logo/202503242757.jpg" },
+  { name: "Telkom University Surabaya", logo: "https://uniguard.co.id/storage/images/logo/202503241958.png" },
+  { name: "Telkom University Bandung", logo: "https://uniguard.co.id/storage/images/logo/202503248441.png" },
+  { name: "PT. ABC Kogen Dairy", logo: "https://uniguard.co.id/storage/images/logo/202503243545.png" },
+  { name: "PT Citra Persada Infrastruktur (CPI)", logo: "https://uniguard.co.id/storage/images/logo/202503241941.png" },
+  { name: "PT. Sentrakom Binatama", logo: "https://uniguard.co.id/storage/images/logo/202503248548.png" },
+  { name: "PT. Yamaha Music Manufacturing Indonesia (YMMI)", logo: "https://uniguard.co.id/storage/images/logo/202503242912.png" }
+],
+
+testimonials: [
+  {
+    name: "Softorb Technology Indonesia (STI)",
+    image: "https://uniguard.co.id/storage/images/testimonial/202504159249.png",
+    desc: "Uniguard menjalin kemitraan strategis dengan Softorb Technology Indonesia dalam proyek Money Reader untuk menghadirkan solusi pembacaan uang yang lebih inklusif melalui teknologi."
+  },
+  {
+    name: "Synnex Metrodata Indonesia",
+    image: "https://uniguard.co.id/storage/images/testimonial/202504154319.png",
+    desc: "Uniguard menjalin kemitraan strategis dengan Synnex Metrodata Indonesia dalam pengembangan HIK Vision sebagai bagian dari komitmen kami menghadirkan inovasi yang human-centric dan inklusif."
+  }
+]
+,
+ products : [
+  {
+    name: "Monitoring & Alerting Machine Learning",
+    image: "https://uniguard.co.id/storage/images/product/202407305097.png"
+  },
+  {
+    name: "Power Management Dashboard",
+    image: "https://uniguard.co.id/storage/images/product/202407309493.png"
+  },
+  {
+    name: "Overall Equipment Effectiveness (OEE)",
+    image: "https://uniguard.co.id/storage/images/product/202407304886.jpg"
+  },
+  {
+    name: "RFID UHF Inventory System",
+    image: "https://uniguard.co.id/storage/images/product/202407301929.png"
+  },
+  {
+    name: "UHF RFID Boom Gate",
+    image: "https://uniguard.co.id/storage/images/product/202407301014.png"
+  },
+  {
+    name: "Asset Management",
+    image: "https://uniguard.co.id/storage/images/product/202407302951.png"
+  },
+  {
+    name: "Staff Attendance",
+    image: "https://uniguard.co.id/storage/images/product/202407302839.png"
+  },
+  {
+    name: "Security for Jewelry",
+    image: "https://uniguard.co.id/storage/images/product/202407302534.png"
+  },
+  {
+    name: "GPS Tracker",
+    image: "https://uniguard.co.id/storage/images/product/202407301678.png"
+  },
+  {
+    name: "Water Quality Record",
+    image: "https://uniguard.co.id/storage/images/product/202407301544.png"
+  },
+  {
+    name: "Turnstile",
+    image: "https://uniguard.co.id/storage/images/product/202407305719.png"
+  },
+  {
+    name: "Parking System",
+    image: "https://uniguard.co.id/storage/images/product/202407303484.jpg"
+  }
+],
+projects:  [
+  {
+    judul: "SWING TURNSTILE TRIPLE CHANNEL",
+    lokasi: "Senayan City, Jakarta",
+    nama_produk: "SWING TURNSTILE TRIPLE CHANNEL",
+    nama_jasa: "PROJECT INSTALLASI SWING TURNSTILE TRIPLE CHANNEL",
+    deskripsi: "-",
+    tahun: 2024,
+    klien: "Lollipop's Playland",
+    "image" : "https://uniguard.co.id/storage/images/product/202407305719.png"
+
+  },
+  {
+    judul: "Swing Turnstile Dual Channel",
+    lokasi: "Bandung, Jawa Barat",
+    nama_produk: "Swing Turnstile Dual Channel",
+    nama_jasa: "Instalasi Swing Turnstile Dual Channel",
+    deskripsi: "-",
+    tahun: 2024,
+    klien: "PT Kereta Api Indonesia Bandung",
+    "image" : "https://uniguard.co.id/storage/images/product/202407301014.png"
+
+  },
+  {
+    judul: "Bridge Tripod Turnstile",
+    lokasi: "Bogor, Jawa Barat",
+    nama_produk: "Bridge Tripod Turnstile",
+    nama_jasa: "Instalasi Bridge Tripod Turnstile",
+    deskripsi: "-",
+    tahun: 2024,
+    klien: "Nicole's River Park",
+    "image" : "https://uniguard.co.id/storage/images/product/202407303484.jpg"
+
+  },
+  {
+    judul: "Swing Gate Motor",
+    lokasi: "Jl. Pintu Satu Senayan, Gelora, Kecamatan Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10270",
+    nama_produk: "Swing Gate Motor",
+    nama_jasa: "Repairing Swing Gate Motor",
+    deskripsi: "Repairing Swing Gate Motor in GBK Stadion Jakarta",
+    tahun: 2024,
+    klien: "GBK - Gelora Bung Karno",
+    "image" : "https://uniguard.co.id/storage/images/product/202407302951.png"
+
+  }
+],
+teams: [
+]
+    };
+
+</script>
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a href="#hero" class="logo scrollto">
+                <img src="public/front/img/logo.png" alt="" class="img-fluid">
+            </a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <!-- <li><a class="nav-link scrollto active" href="#hero">Home</a></li> -->
+                    <li><a class="nav-link scrollto active" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                    <li><a class="nav-link scrollto" href="#clients">Clients</a></li>
+                    <!-- <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li> -->
+                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                    <li><a class="nav-link scrollto " href="#product">Product</a></li>
+                                        <li><a class="nav-link scrollto " href="#project">Project</a></li>
+
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+
+        <div class="container-fluid" data-aos="fade-up">
+            <div class="row justify-content-center">
+                <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                    <h1 id="hero-title"></h1><script>document.getElementById('hero-title').textContent = pageData.home.title || '-';</script>
+                    <h2 id="hero-subtitle"></h2><script>document.getElementById('hero-subtitle').textContent = pageData.home.sub_title || '-';</script>
+                    <div><a href="#about" class="btn-get-started scrollto">Get Started</a></div>
+                </div>
+                <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+                    <img id="hero-image" class="img-fluid animated" alt=""><script>document.getElementById('hero-image').src = pageData.home.image || '';</script>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-center order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
+                        <img id="about-image" class="" width="250" alt="">
+                        <script>
+                            if (pageData.about && pageData.about.image) {
+                                document.getElementById('about-image').src = pageData.about.image;
+                            }
+                            </script>
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+                        <h3 id="about-title"></h3>
+                        <script>
+                            if (pageData.about && pageData.about.title) {
+                                document.getElementById('about-title').textContent = pageData.about.title;
+                            }
+                            </script>
+                        <p class="fst-italic" id="about-subtitle"></p>
+                        <script>
+                            if (pageData.about && pageData.about.sub_title) {
+                                document.getElementById('about-subtitle').textContent = pageData.about.sub_title;
+                            }
+                            </script>
+                        <p id="about-content"></p>
+                        <script>
+                            if (pageData.about && pageData.about.content) {
+                                document.getElementById('about-content').textContent = pageData.about.content;
+                            }
+                            </script>
+                        <a href="#" class="read-more">Read More <i class="bi bi-long-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End About Section -->
+
+        <!-- ======= Counts Section ======= -->
+        <section id="counts" class="counts">
+            <div class="container">
+                <div class="row counters" id="counts-row">
+                    <!-- Counts will be rendered here -->
+                </div>
+            </div>
+        </section>
+        <script>
+        if (pageData.counts && Array.isArray(pageData.counts)) {
+            const countsRow = document.getElementById('counts-row');
+            pageData.counts.forEach(function(count) {
+                const col = document.createElement('div');
+                col.className = "col-lg-3 col-6 text-center";
+                col.innerHTML = `
+                    <span data-purecounter-start="0" data-purecounter-end="${count.total}" data-purecounter-duration="1" class="purecounter"></span>
+                    <p>${count.title}</p>
+                `;
+                countsRow.appendChild(col);
+            });
+        }
+        </script>
+        <!-- End Counts Section -->
+
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services section-bg">
+            <div class="container" data-aos="fade-up">
+
+               <div class="section-title">
+            <h2 id="services-title"></h2>
+            <p id="services-desc"></p>
+        </div>
+
+                <div class="row gy-4" id="services-row">
+                    <!-- Services will be rendered here -->
+                </div>
+                <script>
+                      const serviceSection = pageData.sections.find(s => s.key === "Service");
+            if (serviceSection) {
+                document.getElementById('services-title').textContent = serviceSection.title || '';
+                document.getElementById('services-desc').textContent = serviceSection.description || '';
+            }
+                if (pageData.services && Array.isArray(pageData.services)) {
+                    const servicesRow = document.getElementById('services-row');
+                    pageData.services.forEach(function(service) {
+                        const col = document.createElement('div');
+                        col.className = "col-lg-4 col-md-6 d-flex align-items-stretch";
+                        col.setAttribute("data-aos", "zoom-in");
+                        col.setAttribute("data-aos-delay", "100");
+                        col.innerHTML = `
+                            <div class="icon-box iconbox-blue" style="min-width: 100%;">
+                                <div class="icon">
+                                    <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                                    </svg>
+                                    ${service.icon || ""}
+                                </div>
+                                <h4><a href="#">${service.title || ""}</a></h4>
+                                <p>${service.description || ""}</p>
+                            </div>
+                        `;
+                        servicesRow.appendChild(col);
+                    });
+                }
+                </script>
+            </div>
+        </section><!-- End Services Section -->
+
+<!-- ======= Features Section ======= -->
+<section id="clients" class="clients">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2 id="clients-title"></h2>
+            <p id="clients-desc"></p>
+        </div>
+
+        <div class="row" id="clients-row">
+            <!-- Clients will be rendered here -->
+        </div>
+        <script>
+            // Data JSON untuk section client
+            // Tambahkan ke pageData jika belum ada
+            if (!pageData.sections) pageData.sections = [];
+            if (!pageData.clients) pageData.clients = [];
+            // Contoh data (isi sesuai kebutuhan)
+            /*
+            pageData.sections.push({
+                key: "Client",
+                title: "Our Clients",
+                description: "This is our clients"
+            });
+            pageData.clients = [
+                { name: "Client A", logo: "front/img/client-a.png" },
+                { name: "Client B", logo: "front/img/client-b.png" }
+            ];
+            */
+
+            // Render judul dan deskripsi section Client dari pageData.sections
+            const clientSection = pageData.sections.find(s => s.key === "Client");
+            if (clientSection) {
+                document.getElementById('clients-title').textContent = clientSection.title || '';
+                document.getElementById('clients-desc').textContent = clientSection.description || '';
+            }
+
+            // Render daftar client
+            if (pageData.clients && Array.isArray(pageData.clients)) {
+                const clientsRow = document.getElementById('clients-row');
+                pageData.clients.forEach(function(client) {
+                    const col = document.createElement('div');
+                    col.className = "col-md-2 mb-3";
+                    col.innerHTML = `
+                        <div style="display: flex; justify-content: center; align-items: center; height: 210px;">
+                            <img src="${client.logo}" alt="" class="img-fluid" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                        </div>
+                        <div class="mt-3 text-center">
+                            <span>${client.name}</span>
+                        </div>
+                    `;
+                    clientsRow.appendChild(col);
+                });
+            }
+        </script>
+    </div>
+</section>
+
+
+        <section id="testimonials" class="testimonials section-bg">
+    <div class="container" data-aos="fade-up">
+        <div class="section-title">
+            <h2 id="testimonials-title"></h2>
+            <p id="testimonials-desc"></p>
+        </div>
+        <div class="row" id="testimonials-row">
+            <!-- Testimonials will be rendered here -->
+        </div>
+        <script>
+            // Tambahkan data section dan testimonials ke pageData jika belum ada
+            if (!pageData.sections) pageData.sections = [];
+            if (!pageData.testimonials) pageData.testimonials = [];
+            // Contoh data (isi sesuai kebutuhan)
+            /*
+            pageData.sections.push({
+                key: "Testimonial",
+                title: "Partnership",
+                description: "This is our support projects"
+            });
+            pageData.testimonials = [
+                { name: "Partner A", image: "https://uniguard.co.id/storage/front/img/partner-a.png" },
+                { name: "Partner B", image: "https://uniguard.co.id/storage/front/img/partner-b.png" }
+            ];
+            */
+
+            // Render judul dan deskripsi section Testimonial dari pageData.sections
+            const testimonialSection = pageData.sections.find(s => s.key === "Testimonial");
+            if (testimonialSection) {
+                document.getElementById('testimonials-title').textContent = testimonialSection.title || '';
+                document.getElementById('testimonials-desc').textContent = testimonialSection.description || '';
+            }
+
+            // Render daftar testimonial/partnership
+            if (pageData.testimonials && Array.isArray(pageData.testimonials)) {
+                const testimonialsRow = document.getElementById('testimonials-row');
+                pageData.testimonials.forEach(function(testi) {
+                    const col = document.createElement('div');
+                    col.className = "col-md-2 mb-3";
+                    col.innerHTML = `
+                        <img src="${testi.image}" alt="" class="img-fluid">
+                        <div class="mt-3 text-center">
+                            <h6>${testi.name}</h6>
+                        </div>
+                    `;
+                    testimonialsRow.appendChild(col);
+                });
+            }
+        </script>
+    </div>
+</section>
+
+        <!-- ======= Portfolio Section ======= -->
+        <!-- <section id="portfolio" class="portfolio">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Portfolio</h2>
+                    <p>{{ App\Models\Section::where('section', 'Portfolio')->first()->content ?? 'This is our portfolio' }}</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <ul id="portfolio-flters">
+                            <li data-filter="*" class="filter-active">All</li>
+                            @foreach(App\Models\Category::get() as $category)
+                            <li data-filter=".filter-{{ $category->name }}">{{ $category->name }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row portfolio-container" id="portfolio-list">
+                    @foreach(App\Models\Portfolio::get() as $portfolio)
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-{{ $portfolio->category->name }}">
+                        <div class="portfolio-wrap">
+                            <img src="{{ asset('storage/'. $portfolio->image) }}" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>{{ $portfolio->name }}</h4>
+                                <p>{{ $portfolio->category->name }}</p>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="{{ asset('storage/'. $portfolio->image) }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="{{ $portfolio->name }}"></a>
+                                <a href="{{ route('detail.portfolio', $portfolio->id) }}" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+
+            </div>
+        </section> -->
+        <!-- End Portfolio Section -->
+
+        <section id="team" class="team section-bg" style=" display:none;">
+
+            <div class="container">
+
+                <div class="section-title" data-aos="fade-up">
+                    <h2 id="team-title"></h2>
+                    <p id="team-desc"></p>
+                </div>
+                <div class="row" id="team-row">
+                    <!-- Team members will be rendered here -->
+                </div>
+                <script>
+                    // Tambahkan data section dan teams ke pageData jika belum ada
+                    if (!pageData.sections) pageData.sections = [];
+                    if (!pageData.teams) pageData.teams = [];
+                    /*
+                    pageData.sections.push({
+                        key: "Team",
+                        title: "Team",
+                        description: "This is our team"
+                    });
+                    pageData.teams = [
+                        {
+                            name: "John Doe",
+                            position: "CEO",
+                            image: "https://uniguard.co.id/storage/front/img/team-john.png",
+                            twitter: "#",
+                            facebook: "#",
+                            instagram: "#",
+                            linkedin: "#"
+                        },
+                        // dst...
+                    ];
+                    */
+
+                    // Render judul dan deskripsi section Team dari pageData.sections
+                    const teamSection = pageData.sections.find(s => s.key === "Team");
+                    if (teamSection) {
+                        document.getElementById('team-title').textContent = teamSection.title || '';
+                        document.getElementById('team-desc').textContent = teamSection.description || '';
+                    }
+
+                    // Render daftar team
+                    if (pageData.teams && Array.isArray(pageData.teams)) {
+                        const teamRow = document.getElementById('team-row');
+                        pageData.teams.forEach(function(team) {
+                            const col = document.createElement('div');
+                            col.className = "col-lg-3 col-md-6 d-flex align-items-stretch";
+                            col.innerHTML = `
+                                <div class="member" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="member-img">
+                                        <img src="${team.image}" class="img-fluid" alt="">
+                                        <div class="social">
+                                            <a href="${team.twitter || '#'}"><i class="bi bi-twitter"></i></a>
+                                            <a href="${team.facebook || '#'}"><i class="bi bi-facebook"></i></a>
+                                            <a href="${team.instagram || '#'}"><i class="bi bi-instagram"></i></a>
+                                            <a href="${team.linkedin || '#'}"><i class="bi bi-linkedin"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="member-info">
+                                        <h4>${team.name}</h4>
+                                        <span>${team.position}</span>
+                                    </div>
+                                </div>
+                            `;
+                            teamRow.appendChild(col);
+                        });
+                    }
+                </script>
+            </div>
+        </section>
+
+        <!-- ======= Procuct Section ======= -->
+        <section id="product" class="portfolio section-bg">
+    <div class="container">
+        <div class="section-title" data-aos="fade-up">
+            <h2 id="product-title"></h2>
+            <p id="product-desc"></p>
+        </div>
+        <div class="row portfolio-container" id="product-row">
+            <!-- Products will be rendered here -->
+        </div>
+        <script>
+            // Tambahkan data section dan products ke pageData jika belum ada
+            if (!pageData.sections) pageData.sections = [];
+            if (!pageData.products) pageData.products = [];
+            // Contoh data (isi sesuai kebutuhan)
+            /*
+            pageData.sections.push({
+                key: "Product",
+                title: "Our Product",
+                description: "This is our product"
+            });
+            pageData.products = [
+                { name: "Product A", image: "https://uniguard.co.id/storage/front/img/product-a.png" },
+                { name: "Product B", image: "https://uniguard.co.id/storage/front/img/product-b.png" }
+            ];
+            */
+
+            // Render judul dan deskripsi section Product dari pageData.sections
+            const productSection = pageData.sections.find(s => s.key === "Product");
+            if (productSection) {
+                document.getElementById('product-title').textContent = productSection.title || '';
+                document.getElementById('product-desc').textContent = productSection.description || '';
+            }
+
+            // Render daftar produk
+            if (pageData.products && Array.isArray(pageData.products)) {
+                const productRow = document.getElementById('product-row');
+                pageData.products.forEach(function(product) {
+                    const col = document.createElement('div');
+                    col.className = "col-md-2 portfolio-item";
+                    col.innerHTML = `
+                        <div class="portfolio-wrap text-center" style="height:250px; display: flex; justify-content: center; align-items: center;">
+                            <img src="${product.image}" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>${product.name}</h4>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="${product.image}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="${product.name}"></a>
+                                <!-- Detail link can be added if you have a URL/id -->
+                            </div>
+                        </div>
+                    `;
+                    productRow.appendChild(col);
+                });
+            }
+        </script>
+    </div>
+</section>
+
+    <section id="project" class="portfolio section-bg">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Our Project</h2>
+    </div>
+
+    <div class="row portfolio-container" id="project-container">
+      <!-- Project items akan dimasukkan lewat JavaScript -->
+    </div>
+  </div>
+</section>
+
+<script>
+
+
+  const container = document.getElementById("project-container");
+
+  pageData.projects.forEach(project => {
+    const col = document.createElement("div");
+    col.className = "col-md-3 portfolio-item";
+
+    col.innerHTML = `
+      <div class="portfolio-wrap text-center" style="height:250px; display: flex; justify-content: center; align-items: center;">
+        <img src="${project.image}" class="img-fluid" alt="${project.judul}">
+        <div class="portfolio-info">
+          <h4>${project.judul}</h4>
+          <h5>${project.lokasi}</h5>
+        </div>
+        <div class="portfolio-links">
+          <a href="${project.image}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="${project.judul}"></a>
+          <a href="${project.detailUrl}" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+    `;
+
+    container.appendChild(col);
+  });
+</script>
+
+
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact section-bg">
+            <div class="container" data-aos="fade-up">
+ <div class="section-title">
+            <h2 id="testimonials-title"></h2>
+            <p id="testimonials-desc"></p>
+        </div>
+                <div class="section-title" data-aos="fade-up">
+                    <h2 id="contact-title"></h2>
+                    <p id="contact-desc"></p>
+                </div>
+                <script>
+                    if (!pageData.sections) pageData.sections = [];
+            const contactSection = pageData.sections.find(s => s.key === "Contact");
+            if (contactSection) {
+                document.getElementById('contact-title').textContent = contactSection.title || '';
+                document.getElementById('contact-desc').textContent = contactSection.description || '';
+            }
+
+                </script>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="info-box mb-4">
+                            <i class="bx bx-map"></i>
+                            <h3>Our Address</h3>
+                            <p id="addres"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="info-box  mb-4">
+                            <i class="bx bx-envelope"></i>
+                            <h3>Email Us</h3>
+                            <p id="email"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="info-box  mb-4">
+                            <i class="bx bx-phone-call"></i>
+                            <h3>Call Us</h3>
+                            <p id="telp"></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-6 ">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.732370418006!2d107.62745697365135!3d-6.92256249307713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7f2d87a1ac1%3A0xbe1472eb77d64fd4!2sUniguard%20Indonesia!5e0!3m2!1sid!2sid!4v1722327446997!5m2!1sid!2sid" width="100%" height="384px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <form action="#" class="php-email-form">
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6 form-group mt-3 mt-md-0">
+                                    <input type="email" class="form-control" name="email" id="email-form" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group mt-3">
+                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="my-3">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>
+                            <div class="text-center"><button type="submit" class="btn-send">Send Message</button></div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Contact Section -->
+
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <img src="public/front/img/logo.png" alt="" class="img-fluid" width="70"><br><br>
+
+                        <p id="footer-contact">
+
+                        </p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul id="our-service">
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Join Our Newsletter</h4>
+                        <!-- <p>{{ App\Models\Section::where('section', 'Newsletter')->first()->content ?? 'This is our newsletter' }}</p> -->
+                        <form action="" method="get">
+                            <input type="text" name="msg" id="msg-news">
+                            <input type="submit" id="btn-news" value="Subscribe">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="copyright-wrap d-md-flex py-4">
+                <div class="me-md-auto text-center text-md-start">
+                    <div class="copyright">
+                        &copy; Copyright <strong><span>Uniguard</span></strong>. All Rights Reserved
+                    </div>
+                </div>
+                <!-- <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                    @foreach(App\Models\Sosmed::where('is_active', 1)->get() as $sosmed)
+                    <a href="https://{{ $sosmed->link }}" target="__blank"><i class="{{ $sosmed->icon }}"></i></a>
+                    @endforeach
+                </div> -->
+            </div>
+
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!--<div id="preloader"></div>-->
+
+    <!-- Vendor JS Files -->
+    <script src="public/front/vendor/jquery/jquery.min.js"></script>
+    <script src="public/front/vendor/purecounter/purecounter.js"></script>
+    <script src="public/front/vendor/aos/aos.js"></script>
+    <script src="public/front/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="public/front/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="public/front/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="public/front/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="public/front/vendor/php-email-form/validate.js"></script> -->
+
+    <!-- Template Main JS File -->
+    <script src="public/front/js/main.js"></script>
+    <script src="public/front/js/app.js"></script>
+
+
+    
+</body>
+
+</html>
