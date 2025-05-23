@@ -2,18 +2,39 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>UNIGUARD</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+  <!-- Primary Meta Tags -->
+  <title>UNIGUARD</title>
+  <meta name="title" content="UNIGUARD | Your IT Solutions">
+  <meta name="description" content="Uniguard menyediakan sistem keamanan berbasis IoT untuk berbagai kebutuhan industri dan bisnis modern.">
+<meta name="author" content="UNIGUARD Team">
 
-    <!-- Favicons -->
-    <link href="https://storage.googleapis.com/ug_landingpage/front/img/logo-uniguard.png" rel="icon">
-    <link href="https://storage.googleapis.com/ug_landingpage/front/img/logo-uniguard.png" rel="apple-touch-icon">
+  <!-- Favicon -->
+  <link rel="icon" href="https://storage.googleapis.com/ug_landingpage/front/img/logo-uniguard.png" type="image/png">
+  <link rel="apple-touch-icon" href="https://storage.googleapis.com/ug_landingpage/front/img/logo-uniguard.png">
 
-    <!-- Google Fonts -->
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://uniguard.co.id">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:number" content="https://wa.me/6285220851888">
+  <meta property="og:url" content="https://uniguard.co.id">
+  <meta property="og:title" content="UNIGUARD | Your IT Solutions">
+  <meta property="og:description" content="Uniguard menyediakan sistem keamanan berbasis IoT untuk berbagai kebutuhan industri dan bisnis modern.">
+  <meta property="og:image" content="https://storage.googleapis.com/ug_landingpage/front/img/logo-uniguard.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://uniguard.co.id">
+  <meta property="twitter:title" content="UNIGUARD | Your IT Solutions">">
+  <meta property="twitter:description" content="Uniguard menyediakan sistem keamanan berbasis IoT untuk berbagai kebutuhan industri dan bisnis modern.">
+  <meta property="twitter:image" content="https://storage.googleapis.com/ug_landingpage/front/img/logo-uniguard.png">
+
+  <meta name="keywords" content="keamanan digital, IoT, AI, sistem pengawasan, solusi keamanan, Uniguard Indonesia, Internet of Things, Integrated, UNIGUARD, Teknologi, Technology">
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
@@ -226,7 +247,7 @@ teams: [
                     <li><a class="nav-link scrollto" href="#services">Services</a></li>
                     <li><a class="nav-link scrollto" href="#clients">Clients</a></li>
                     <!-- <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li> -->
-                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                    <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
                     <li><a class="nav-link scrollto " href="#product">Product</a></li>
                                         <li><a class="nav-link scrollto " href="#project">Project</a></li>
 
@@ -275,43 +296,43 @@ teams: [
 
     <main id="main">
 
-      <section id="about" class="about">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 text-center order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
-        <img id="about-image" class="" width="250" alt="">
-        <script>
-          window.pageDataReady.then(() => {
-            document.getElementById('about-image').src = window.pageData.about?.image || '';
-          });
-        </script>
-      </div>
-      <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
-        <h3 id="about-title"></h3>
-        <script>
-          window.pageDataReady.then(() => {
-            document.getElementById('about-title').textContent = window.pageData.about?.title || '-';
-          });
-        </script>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-6 text-center order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
+                <img id="about-image" class="" width="250" alt="">
+                <script>
+                window.pageDataReady.then(() => {
+                    document.getElementById('about-image').src = window.pageData.about?.image || '';
+                });
+                </script>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+                <h3 id="about-title"></h3>
+                <script>
+                window.pageDataReady.then(() => {
+                    document.getElementById('about-title').textContent = window.pageData.about?.title || '-';
+                });
+                </script>
 
-        <p class="fst-italic" id="about-subtitle"></p>
-        <script>
-          window.pageDataReady.then(() => {
-            document.getElementById('about-subtitle').textContent = window.pageData.about?.sub_title || '-';
-          });
-        </script>
+                <p class="fst-italic" id="about-subtitle"></p>
+                <script>
+                window.pageDataReady.then(() => {
+                    document.getElementById('about-subtitle').textContent = window.pageData.about?.sub_title || '-';
+                });
+                </script>
 
-        <p id="about-content"></p>
-        <script>
-          window.pageDataReady.then(() => {
-            document.getElementById('about-content').textContent = window.pageData.about?.content || '-';
-          });
-        </script>
+                <p id="about-content"></p>
+                <script>
+                window.pageDataReady.then(() => {
+                    document.getElementById('about-content').textContent = window.pageData.about?.content || '-';
+                });
+                </script>
 
-      </div>
-    </div>
-  </div>
-</section>
+            </div>
+            </div>
+        </div>
+    </section>
 
 
         <!-- ======= Counts Section ======= -->
@@ -357,50 +378,54 @@ teams: [
   </div>
 
   <script>
-    (function() {
-      if (!window.pageData) {
-        console.warn("pageData is not defined");
-        return;
-      }
-      if (!pageData.sections) pageData.sections = [];
-      if (!pageData.services) pageData.services = [];
+  window.pageDataReady.then(() => {
+    if (!window.pageData) {
+      console.warn("pageData is not defined");
+      return;
+    }
 
-      // Render judul dan deskripsi section Service
-      const serviceSection = pageData.sections.find(s => s.key === "Service");
-      if (serviceSection) {
-        document.getElementById('services-title').textContent = serviceSection.title || '';
-        document.getElementById('services-desc').textContent = serviceSection.description || '';
-      }
-     
+    if (!pageData.sections) pageData.sections = [];
+    if (!pageData.services) pageData.services = [];
 
-      // Render daftar services
-      if (Array.isArray(pageData.services)) {
-        const servicesRow = document.getElementById('services-row');
+    // Render judul dan deskripsi section Service
+    const serviceSection = pageData.sections.find(s => s.key === "Service");
+    if (serviceSection) {
+      document.getElementById('services-title').textContent = serviceSection.title || '';
+      document.getElementById('services-desc').textContent = serviceSection.description || '';
+    }
 
-        pageData.services.forEach((service, index) => {
-          const col = document.createElement('div');
-          col.className = "col-lg-4 col-md-6 d-flex align-items-stretch";
-          col.setAttribute("data-aos", "zoom-in");
-          col.setAttribute("data-aos-delay", `${100 * (index + 1)}`);
+    // Render daftar services
+    if (Array.isArray(pageData.services)) {
+      const servicesRow = document.getElementById('services-row');
 
-          col.innerHTML = `
-            <div class="icon-box iconbox-blue" style="min-width: 100%;">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                </svg>
-                ${service.icon || ""}
-              </div>
-              <h4><a href="#">${service.title || ""}</a></h4>
-              <p>${service.description || ""}</p>
+      pageData.services.forEach((service, index) => {
+        console.log(service);
+        const col = document.createElement('div');
+        col.className = "col-lg-4 col-md-6 d-flex align-items-stretch";
+        col.setAttribute("data-aos", "zoom-in");
+        col.setAttribute("data-aos-delay", `${100 * (index + 1)}`);
+
+        col.innerHTML = `
+          <div class="icon-box iconbox-blue" style="min-width: 100%;">
+            <div class="icon">
+              <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                  d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
+                </path>
+              </svg>
+              ${service.icon || ""}
             </div>
-          `;
+            <h4><a href="#">${service.title || ""}</a></h4>
+            <p>${service.description || ""}</p>
+          </div>
+        `;
 
-          servicesRow.appendChild(col);
-        });
-      }
-    })();
-  </script>
+        servicesRow.appendChild(col);
+      });
+    }
+  });
+</script>
+
 </section>
 
 
@@ -874,6 +899,23 @@ teams: [
     <script src="public/front/js/main.js"></script>
     <script src="public/front/js/app.js"></script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "UNIGUARD",
+  "url": "https://uniguard.co.id",
+  "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo-uniguard.png",
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "telephone": "+62-852-2085-1888",
+    "contactType": "Techinacal Support"
+  }],
+  "sameAs": [
+    "https://instagram.com/uniguard.idn",
+  ]
+}
+</script>
 
     
 </body>
