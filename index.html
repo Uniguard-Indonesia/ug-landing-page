@@ -20,7 +20,7 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:number" content="https://wa.me/6285220851888">
+  <meta property="og:number" contentA="https://wa.me/6285220851888">
   <meta property="og:url" content="https://uniguard.co.id">
   <meta property="og:title" content="UNIGUARD | Your IT Solutions">
   <meta property="og:description" content="Uniguard menyediakan sistem keamanan berbasis IoT untuk berbagai kebutuhan industri dan bisnis modern.">
@@ -29,7 +29,7 @@
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://uniguard.co.id">
-  <meta property="twitter:title" content="UNIGUARD | Your IT Solutions">">
+  <meta property="twitter:title" content="UNIGUARD | Your IT Solutions">
   <meta property="twitter:description" content="Uniguard menyediakan sistem keamanan berbasis IoT untuk berbagai kebutuhan industri dan bisnis modern.">
   <meta property="twitter:image" content="https://storage.googleapis.com/ug_landingpage/front/img/logo-uniguard.png">
 
@@ -249,7 +249,7 @@ teams: [
                     <!-- <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li> -->
                     <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
                     <li><a class="nav-link scrollto " href="#product">Product</a></li>
-                                        <li><a class="nav-link scrollto " href="#project">Project</a></li>
+                                        <!-- <li><a class="nav-link scrollto " href="#project">Project</a></li> -->
 
                     <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                 </ul>
@@ -674,49 +674,7 @@ teams: [
 </section>
 
 
-    <section id="project" class="portfolio section-bg">
-  <div class="container">
-    <div class="section-title" data-aos="fade-up">
-      <h2>Our Project</h2>
-    </div>
-
-    <div class="row portfolio-container" id="project-container">
-      <!-- Project items akan dimasukkan lewat JavaScript -->
-    </div>
-    <script>
-  window.pageDataReady.then(() => {
-    const container = document.getElementById("project-container");
-
-    if (Array.isArray(window.pageData.projects) && window.pageData.projects.length > 0) {
-      window.pageData.projects.forEach(project => {
-        const col = document.createElement("div");
-        col.className = "col-lg-3 col-md-4 col-sm-6 portfolio-item";
-        col.setAttribute('data-aos', 'fade-up');
-
-        col.innerHTML = `
-          <div class="portfolio-wrap text-center" style="height:250px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-            <img src="${project.image || ''}" class="img-fluid mb-2" alt="${project.judul || 'Project Image'}" style="max-height: 140px; object-fit: contain;">
-            <div class="portfolio-info">
-              <h4>${project.judul || ''}</h4>
-              <h5>${project.lokasi || ''}</h5>
-            </div>
-            <div class="portfolio-links">
-              <a href="${project.image || '#'}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="${project.judul || ''}"><i class="bi bi-plus"></i></a>
-              ${project.detailUrl ? `<a href="${project.detailUrl}" title="More Details"><i class="bx bx-link"></i></a>` : ''}
-            </div>
-          </div>
-        `;
-
-        container.appendChild(col);
-      });
-    } else {
-      container.innerHTML = `<p class="text-center">No projects available at the moment.</p>`;
-    }
-  });
-</script>
-
-  </div>
-</section>
+ 
 
 
 

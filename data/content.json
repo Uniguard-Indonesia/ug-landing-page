@@ -55,7 +55,6 @@
         {"key": "Client", "title": "Our Clients", "description": "This is our clients"},
         {"key": "Testimonial", "title": "Partnership", "description": "This is our support Partnership"},
         {"key": "Product", "title": "Our Product", "description": "This is our product"},
-        {"key": "Project", "title": "Our Project", "description": "This is our project"},
         {"key": "Service", "title": "Our service", "description": "This is our services"},
         {"key": "Team", "title": "Team", "description": "This is our team"},
         {"key": "Contact", "title": "Contact", "description": "This is our contact"},
@@ -66,26 +65,27 @@
       "description": "Feel free to reach out to us for any inquiries or support."
     }
     ],
-           "clients": [
-  { "name": "Lollipop Playland", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202408011903.png" },
+        "clients": [
   { "name": "KAI", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202408013599.png" },
-  { "name": "Nicole's River Park", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202408011048.png" },
   { "name": "GBK - Gelora Bung Karno", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202411209331.png" },
-  { "name": "HeHa Sky View", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202503247383.png" },
-  { "name": "Batik Fractal Indonesia", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202503242601.png" },
-  { "name": "PT Communications Solution Indonesia (CommSol)", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202503248780.png" },
-  { "name": "PT. Matallo Telesys", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202503248962.png" },
-  { "name": "PT. Sanghiang Perkasa", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202503247572.png" },
-  { "name": "PT. Tah Sung Hung (TSH)", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202503246826.png" },
-  { "name": "PT. Thinkspedia Digital Solusindo", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202503242715.png" },
-  { "name": "PT. Tripsky Teknologi Surabaya", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202503242757.jpg" },
-  { "name": "Telkom University Surabaya", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202503241958.png" },
+  { "name": "PT. Yamaha Music Manufacturing Indonesia (YMMI)", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202503242912.png" },
   { "name": "Telkom University Bandung", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202503248441.png" },
+  { "name": "Telkom University Surabaya", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202503241958.png" },
+  { "name": "Kalbe (PT. Sanghiang Perkasa / Kalbe Nutritionals)", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202503247572.png" },
   { "name": "PT. ABC Kogen Dairy", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202503243545.png" },
+  { "name": "HeHa Sky View", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202503247383.png" },
+  { "name": "Nicole's River Park", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202408011048.png" },
+  { "name": "Lollipop Playland", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202408011903.png" },
   { "name": "PT Citra Persada Infrastruktur (CPI)", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202503241941.png" },
+  { "name": "PT. Matallo Telesys", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202503248962.png" },
   { "name": "PT. Sentrakom Binatama", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202503248548.png" },
-  { "name": "PT. Yamaha Music Manufacturing Indonesia (YMMI)", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202503242912.png" }
+  { "name": "PT. Tah Sung Hung (TSH)", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202503246826.png" },
+  { "name": "PT. Tripsky Teknologi Surabaya", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202503242757.jpg" },
+  { "name": "PT. Thinkspedia Digital Solusindo", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202503242715.png" },
+  { "name": "PT Communications Solution Indonesia (CommSol)", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202503248780.png" },
+  { "name": "Batik Fractal Indonesia", "logo": "https://storage.googleapis.com/ug_landingpage/front/img/logo/202503242601.png" }
 ],
+
 "testimonials": [
   {
     "name": "Softorb Technology Indonesia (STI)",
@@ -101,100 +101,75 @@
 ,
  "products" : [
   {
-    "name": "Monitoring & Alerting Machine Learning",
-    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/202407305097.png"
+    "name": "Height Turnstile",
+    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/Height%20Turnstile.jpg"
   },
   {
-    "name": "Power Management Dashboard",
-    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/202407309493.png"
+    "name": "Tripod Turnstile",
+    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/Tripod%20Turnstile.jpg"
   },
   {
-    "name": "Overall Equipment Effectiveness (OEE)",
-    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/202407304886.jpg"
+    "name": "Flap Barrier",
+    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/Flap%20barrier.jpg"
   },
   {
-    "name": "RFID UHF Inventory System",
-    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/202407301929.png"
+    "name": "Speed Gate",
+    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/speed%20gate.jpg"
+  },
+ 
+  {
+    "name": "Swing Gate",
+    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/Swing%20gate.jpg"
   },
   {
-    "name": "UHF RFID Boom Gate",
-    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/202407301014.png"
-  }, 
-  {
-    "name": "Asset Management",
-    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/202407302951.png"
+    "name": "Parking System Set",
+    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/Parking%20system%20set.jpg"
   },
   {
-    "name": "Staff Attendance",
-    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/202407302839.png"
+    "name": "Barrier Gate",
+    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/1.jpg"
   },
   {
-    "name": "Security for Jewelry",
-    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/202407302534.png"
+    "name": "Manless",
+    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/2.jpg"
+  },
+ 
+  {
+    "name": "Metal Detector",
+    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/Metal%20Detector.jpg"
+  },
+  {
+    "name": "Smart CCTV",
+    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/Smart%20CCTV.jpg"
+  },
+  
+  {
+    "name": "Smart Door Lock",
+    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/Smart%20DoorLock.jpg"
   },
   {
     "name": "GPS Tracker",
-    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/202407301678.png"
+    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/GPS%20Tracker.jpg"
   },
   {
-    "name": "Water Quality Record",
-    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/202407301544.png"
+    "name": "Security for Jewelery",
+    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/Jewelery.jpg"
+  },
+   {
+    "name": "Overall Equipment Effectiveness (OEE)",
+    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/3.jpg"
   },
   {
-    "name": "Turnstile",
-    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/202407305719.png"
+    "name": "Power Management Dashboard",
+    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/Power%20Management%20Dashboard.jpg"
   },
   {
-    "name": "Parking System",
-    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/202407303484.jpg"
+    "name": "Monitoring & Alerting Machine Learning",
+    "image": "https://storage.googleapis.com/ug_landingpage/front/img/product/Monitoring%20%26%20Alerting%20Machine%20Learning.jpg"
   }
+  
 ],
-"projects":  [
-  {
-    "judul": "SWING TURNSTILE TRIPLE CHANNEL",
-    "lokasi": "Senayan City, Jakarta",
-    "nama_produk": "SWING TURNSTILE TRIPLE CHANNEL",
-    "nama_jasa": "PROJECT INSTALLASI SWING TURNSTILE TRIPLE CHANNEL",
-    "deskripsi": "-",
-    "tahun": 2024,
-    "klien": "Lollipop's Playland",
-    "image" : "https://storage.googleapis.com/ug_landingpage/front/img/product/202407305719.png"
 
-  },
-  {
-    "judul": "Swing Turnstile Dual Channel",
-    "lokasi": "Bandung, Jawa Barat",
-    "nama_produk": "Swing Turnstile Dual Channel",
-    "nama_jasa": "Instalasi Swing Turnstile Dual Channel",
-    "deskripsi": "-",
-    "tahun": 2024,
-    "klien": "PT Kereta Api Indonesia Bandung",
-    "image" : "https://storage.googleapis.com/ug_landingpage/front/img/product/202407301014.png"
-
-  },
-  {
-    "judul": "Bridge Tripod Turnstile",
-    "lokasi": "Bogor, Jawa Barat",
-    "nama_produk": "Bridge Tripod Turnstile",
-    "nama_jasa": "Instalasi Bridge Tripod Turnstile",
-    "deskripsi": "-",
-    "tahun": 2024,
-    "klien": "Nicole's River Park",
-    "image" : "https://storage.googleapis.com/ug_landingpage/front/img/product/202407303484.jpg"
-
-  },
-  {
-    "judul": "Swing Gate Motor",
-    "lokasi": "Jl. Pintu Satu Senayan, Gelora, Kecamatan Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10270",
-    "nama_produk": "Swing Gate Motor",
-    "nama_jasa": "Repairing Swing Gate Motor",
-    "deskripsi": "Repairing Swing Gate Motor in GBK Stadion Jakarta",
-    "tahun": 2024,
-    "klien": "GBK - Gelora Bung Karno",
-    "image" : "https://storage.googleapis.com/ug_landingpage/front/img/product/202407302951.png"
-
-  }
-],
  "teams": [
     {
       "name": "John Doe",
