@@ -682,8 +682,8 @@ teams: [
 <section id="contact" class="contact section-bg">
   <div class="container" data-aos="fade-up">
     <div class="section-title">
-      <h2 id="contact-title"></h2>
-      <p id="contact-desc"></p>
+      <h2>Get in Touch</h2>
+      <p>Feel free to reach out to us for any inquiries or support.</p>
     </div>
 
     <div class="row">
@@ -693,11 +693,11 @@ teams: [
           <h3>Our Address</h3>
           <p>
             <strong>Head Office (Back Office):</strong><br>
-            <span id="contact-address-head"></span>
+            <span>Jl. Laswi No. 1, Bandung, Jawa Barat</span>
           </p>
           <p>
             <strong>Operational & Workshop:</strong><br>
-            <span id="contact-address-op"></span>
+            <span>Jl. Raya Padalarang – Cisarua, Kabupaten Bandung Barat, Jawa Barat 40551</span>
           </p>
         </div>
       </div>
@@ -706,7 +706,7 @@ teams: [
         <div class="info-box mb-4">
           <i class="bx bx-envelope"></i>
           <h3>Email Us</h3>
-          <p id="contact-email"></p>
+          <p>info@uniguard.co.id</p>
         </div>
       </div>
 
@@ -714,8 +714,8 @@ teams: [
         <div class="info-box mb-4">
           <i class="bx bx-phone-call"></i>
           <h3>Call & WhatsApp Us</h3>
-          <p id="contact-telp"></p>
-          <p id="contact-wa"></p>
+          <p>022 30000678</p>
+          <p>0822 999 00 331</p>
         </div>
       </div>
     </div>
@@ -759,40 +759,6 @@ teams: [
     </div>
   </div>
 </section>
-
-<script>
-  if (!window.pageData) window.pageData = {};
-  if (!pageData.sections) pageData.sections = [];
-  if (!pageData.contactInfo) pageData.contactInfo = {};
-
-  const contactSection = pageData.sections.find(s => s.key === "Contact");
-  if (contactSection) {
-    document.getElementById('contact-title').textContent = contactSection.title || '';
-    document.getElementById('contact-desc').textContent = contactSection.description || '';
-  }
-
-  // Isi alamat, email, dan telp
-  document.addEventListener('DOMContentLoaded', () => {
-    const headOffice = pageData.contactInfo.headOffice;
-    const operational = pageData.contactInfo.operational;
-
-    if (headOffice) {
-      document.getElementById('contact-address-head').textContent = headOffice.address;
-    } else {
-      document.getElementById('contact-address-head').textContent = 'No address provided';
-    }
-    
-    if (operational) {
-      document.getElementById('contact-address-op').textContent = operational.address;
-    } else {
-      document.getElementById('contact-address-op').style.display = 'none'; // Sembunyikan jika tidak ada
-    }
-    
-    document.getElementById('contact-email').textContent = pageData.contactInfo.email || 'No email provided';
-    document.getElementById('contact-telp').textContent = pageData.contactInfo.phone.telp || 'No phone provided';
-    document.getElementById('contact-wa').textContent = pageData.contactInfo.phone.whatsapp || 'No WA provided';
-  });
-</script>
 
     </main>
     <!-- End #main -->
