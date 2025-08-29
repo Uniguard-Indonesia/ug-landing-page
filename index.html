@@ -679,62 +679,28 @@ teams: [
 
 
 
-    <section id="contact" class="contact section-bg">
+<section id="contact" class="contact section-bg">
   <div class="container" data-aos="fade-up">
     <div class="section-title">
       <h2 id="contact-title"></h2>
       <p id="contact-desc"></p>
     </div>
 
-    <script>
-      if (!window.pageData) window.pageData = {};
-      if (!pageData.sections) pageData.sections = [];
-      if (!pageData.contactInfo) pageData.contactInfo = {};
-
-      const contactSection = pageData.sections.find(s => s.key === "Contact");
-      if (contactSection) {
-        document.getElementById('contact-title').textContent = contactSection.title || '';
-        document.getElementById('contact-desc').textContent = contactSection.description || '';
-      }
-
-      // Isi alamat, email, dan telp
-      document.addEventListener('DOMContentLoaded', () => {
-        const headOffice = pageData.contactInfo.headOffice;
-        const operational = pageData.contactInfo.operational;
-
-        if (headOffice) {
-          document.getElementById('contact-address-head').textContent = headOffice.address;
-        } else {
-          document.getElementById('contact-address-head').textContent = 'No address provided';
-        }
-        
-        if (operational) {
-          document.getElementById('contact-address-op').textContent = operational.address;
-        } else {
-          document.getElementById('contact-address-op').style.display = 'none'; // Sembunyikan jika tidak ada
-        }
-        
-        document.getElementById('contact-email').textContent = pageData.contactInfo.email || 'No email provided';
-        document.getElementById('contact-telp').textContent = pageData.contactInfo.phone.telp || 'No phone provided';
-        document.getElementById('contact-wa').textContent = pageData.contactInfo.phone.whatsapp || 'No WA provided';
-      });
-    </script>
-
     <div class="row">
-     <div class="col-lg-6">
-  <div class="info-box mb-4">
-    <i class="bx bx-map"></i>
-    <h3>Our Address</h3>
-    <p>
-      <strong>Head Office (Back Office):</strong><br>
-      <span id="contact-address-head"></span>
-    </p>
-    <p>
-      <strong>Operational & Workshop:</strong><br>
-      <span id="contact-address-op"></span>
-    </p>
-  </div>
-</div>
+      <div class="col-lg-6">
+        <div class="info-box mb-4">
+          <i class="bx bx-map"></i>
+          <h3>Our Address</h3>
+          <p>
+            <strong>Head Office (Back Office):</strong><br>
+            <span id="contact-address-head"></span>
+          </p>
+          <p>
+            <strong>Operational & Workshop:</strong><br>
+            <span id="contact-address-op"></span>
+          </p>
+        </div>
+      </div>
 
       <div class="col-lg-3 col-md-6">
         <div class="info-box mb-4">
@@ -793,6 +759,40 @@ teams: [
     </div>
   </div>
 </section>
+
+<script>
+  if (!window.pageData) window.pageData = {};
+  if (!pageData.sections) pageData.sections = [];
+  if (!pageData.contactInfo) pageData.contactInfo = {};
+
+  const contactSection = pageData.sections.find(s => s.key === "Contact");
+  if (contactSection) {
+    document.getElementById('contact-title').textContent = contactSection.title || '';
+    document.getElementById('contact-desc').textContent = contactSection.description || '';
+  }
+
+  // Isi alamat, email, dan telp
+  document.addEventListener('DOMContentLoaded', () => {
+    const headOffice = pageData.contactInfo.headOffice;
+    const operational = pageData.contactInfo.operational;
+
+    if (headOffice) {
+      document.getElementById('contact-address-head').textContent = headOffice.address;
+    } else {
+      document.getElementById('contact-address-head').textContent = 'No address provided';
+    }
+    
+    if (operational) {
+      document.getElementById('contact-address-op').textContent = operational.address;
+    } else {
+      document.getElementById('contact-address-op').style.display = 'none'; // Sembunyikan jika tidak ada
+    }
+    
+    document.getElementById('contact-email').textContent = pageData.contactInfo.email || 'No email provided';
+    document.getElementById('contact-telp').textContent = pageData.contactInfo.phone.telp || 'No phone provided';
+    document.getElementById('contact-wa').textContent = pageData.contactInfo.phone.whatsapp || 'No WA provided';
+  });
+</script>
 
     </main>
     <!-- End #main -->
