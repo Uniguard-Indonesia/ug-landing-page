@@ -10,11 +10,22 @@
         "content": "Misi kami adalah merintis inovasi, mempertahankan kepeloporan di bidang kami. Kami memberi nilai tambah pada bisnis pelanggan kami dengan memberikan solusi, pencapaian baru dalam lingkungan tim yang beretika tinggi, berintegritas, dan layanan pelanggan terbaik.",
         "image": "https://storage.googleapis.com/ug_landingpage/front/img/about/202407301417.png"
     },
-     "contactInfo": {
-    "address": "Jl. Raya Padalarang – Cisarua, Kabupaten Bandung Barat, Jawa Barat 40551",
-    "email": "info@uniguard.co.id",
-    "phone": "+62-852-2085-1888"
-  },
+   "contactInfo": {
+"headOffice": {
+"address": "Jl. Laswi No. 1, Bandung, Jawa Barat",
+"designation": "Head Office (Back Office)"
+},
+"operational": {
+"address": "Jl. Raya Padalarang – Cisarua, Kabupaten Bandung Barat, Jawa Barat 40551",
+"designation": "Operational & Workshop"
+},
+"email": "info@uniguard.co.id",
+"phone": {
+"telp": "022 30000678",
+"whatsapp": "0822 999 00 331"
+}
+},
+
     
    "counts": [
     {

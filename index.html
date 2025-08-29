@@ -679,8 +679,7 @@ teams: [
 
 
 
-        <!-- ======= Contact Section ======= -->
-   <section id="contact" class="contact section-bg">
+    <section id="contact" class="contact section-bg">
   <div class="container" data-aos="fade-up">
     <div class="section-title">
       <h2 id="contact-title"></h2>
@@ -700,20 +699,42 @@ teams: [
 
       // Isi alamat, email, dan telp
       document.addEventListener('DOMContentLoaded', () => {
-        document.getElementById('contact-address').textContent = pageData.contactInfo.address || 'No address provided';
+        const headOffice = pageData.contactInfo.headOffice;
+        const operational = pageData.contactInfo.operational;
+
+        if (headOffice) {
+          document.getElementById('contact-address-head').textContent = headOffice.address;
+        } else {
+          document.getElementById('contact-address-head').textContent = 'No address provided';
+        }
+        
+        if (operational) {
+          document.getElementById('contact-address-op').textContent = operational.address;
+        } else {
+          document.getElementById('contact-address-op').style.display = 'none'; // Sembunyikan jika tidak ada
+        }
+        
         document.getElementById('contact-email').textContent = pageData.contactInfo.email || 'No email provided';
-        document.getElementById('contact-telp').textContent = pageData.contactInfo.phone || 'No phone provided';
+        document.getElementById('contact-telp').textContent = pageData.contactInfo.phone.telp || 'No phone provided';
+        document.getElementById('contact-wa').textContent = pageData.contactInfo.phone.whatsapp || 'No WA provided';
       });
     </script>
 
     <div class="row">
-      <div class="col-lg-6">
-        <div class="info-box mb-4">
-          <i class="bx bx-map"></i>
-          <h3>Our Address</h3>
-          <p id="contact-address"></p>
-        </div>
-      </div>
+     <div class="col-lg-6">
+  <div class="info-box mb-4">
+    <i class="bx bx-map"></i>
+    <h3>Our Address</h3>
+    <p>
+      <strong>Head Office (Back Office):</strong><br>
+      <span id="contact-address-head"></span>
+    </p>
+    <p>
+      <strong>Operational & Workshop:</strong><br>
+      <span id="contact-address-op"></span>
+    </p>
+  </div>
+</div>
 
       <div class="col-lg-3 col-md-6">
         <div class="info-box mb-4">
@@ -726,8 +747,9 @@ teams: [
       <div class="col-lg-3 col-md-6">
         <div class="info-box mb-4">
           <i class="bx bx-phone-call"></i>
-          <h3>Call Us</h3>
+          <h3>Call & WhatsApp Us</h3>
           <p id="contact-telp"></p>
+          <p id="contact-wa"></p>
         </div>
       </div>
     </div>
